@@ -1,0 +1,396 @@
+/* Global */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: "Montserrat",sans-serif;
+    background-size:cover;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  li{
+    list-style: none;
+  }
+  
+  :root{
+    --drop-shadow:0px 3px 5px 2px rgba(0, 0, 0, 0.171);
+    --hover-shadow:0px 5px 8px 2px rgba(0, 0, 0, 0.171);
+    --main-color:#f64d4a;
+  }
+  
+  /* Navbar */
+  
+  .navbar{
+    width: 100%;
+    padding: 20px 0;
+  }
+  
+  .container{
+    width: 80%;
+    margin: auto;
+  }
+  
+  .container h2{
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(31, 31, 31);
+  }
+  
+  .navbar .container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  
+  .nav{
+    justify-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav a{
+    margin-right: 70px;
+    font-weight: 100;
+    font-size: 14px;
+    color: black;
+  }
+  
+  .nav .cart{
+    margin-left:70px;
+    padding: 10px 35px;
+    border: 2px solid black;
+    border-radius: 3px;
+  }
+  
+  /* Main section */
+  .main{
+    width: 100%;
+  }
+  
+  .main-container{
+    width: 85%;
+    margin: 50px auto;
+  }
+  
+  .main .main-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  
+  .main-container div{
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  .main-container div h2{
+    color: #3881BA;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .main-container h1{
+    font-size: 60px;
+    margin: 15px 0;
+    color: rgb(31, 31, 31);
+  }
+  .main-container p{
+    font-size: 15px;
+    margin: 15px 0;
+  }
+  
+  .main-container .btn{
+    background: var(--main-color);
+    padding: 15px 25px;
+    margin: 10px 0;
+    display: inline-block;
+    font-size: 15px;
+    color: white ;
+    border-radius: 1px;
+    box-shadow: var(--drop-shadow);
+    transition: 0.2s ease-in-out;
+  }
+  
+  .main-container .btn:hover{
+    background: rgb(214, 214, 214);
+    color: black;
+  }
+  
+  .main-container img{
+    width: 100%;
+    transition: fadeUp 0.5s ease-in-out;
+    animation: fadeUp 0.8s ease;
+  }
+  
+  @media(max-width:900px){
+  
+    .main .main-container{
+      grid-template-columns: 1fr;
+    }
+    .main-container img{
+      order: -1;
+    }
+  }
+  
+  /* Secondary container
+  .secondary{
+    width: 100%;
+  }
+  .second-container{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10rem;
+  }
+  .overlay{
+    position: absolute;
+    background-image: url(images/2.jpg);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    opacity: .1;
+    pointer-events: none;
+  }
+  .second-container img{
+    width: 100%;
+  }
+  .second-container .content{
+    margin: 100px 0;
+  }
+  .second-container img, .second-container .content{
+    margin-top: 150px;
+  }
+  .content h1{
+    font-size: 60px;
+    margin: 20px 0;
+    color: var(--main-color);
+  }
+  .content h3{
+    font-weight: 200;
+    margin: 15px 0;
+  }
+  .content p{
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 30px; 
+    color: #3881BA;
+  }
+  a{
+    cursor: pointer;
+  }
+  .show{
+    padding: 10px 20px;
+    background: #253666;
+    margin-right: 15px;
+    color: white;
+    font-size: 15px;
+    border-radius: 2px;
+  }
+  .check{
+    margin-left: 15px;
+    border: 2px solid #253666;
+    padding: 10px 20px;
+    color: rgb(14, 14, 14);
+    border-radius: 2px;
+  } */
+  
+  /* Animations */
+  @keyframes fadeUp{
+    from{
+      opacity:0.1;
+      transform: translateY(-70px);
+    }
+    to{
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  
+  @keyframes fadeIn{
+    from{
+      opacity:0;
+      transform: translateX(-100px);
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  
+  
+  
+  
+
+
+  
+  
+  body{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+.container{
+	width:100%;
+	height:auto;
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+
+
+.about{
+	width:100%;
+	height: 600px;
+	background-image: url(https://i.ibb.co/9bZPZgp/dsc4641-copy-880074f1fd6d9422f6c3fded126a54c8.jpg); 
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+.text{
+	font-size: 30px;
+	color:#fff;
+	font-family: sans-serif;
+    text-shadow: 0px 15px 12px #000;
+    position: top;
+}
+
+
+
+.line{
+	width:200px;
+	height: 8px;
+	background-color: #17ff8d;
+	display: block;
+	position: relative;
+	border-radius: 5px;
+	left:10%;
+	box-shadow: 0px 15px 12px 0px #000;
+}
+
+
+.content{
+	width:100%;
+	height:auto;
+	background-color: #17ff8d;
+	font-size: 23px;
+	font-family: audiowide;
+	color:#333;
+	line-height: 30px;
+	text-align: left;
+}
+
+
+.b{
+	font-size: 50px;
+	color:#000;
+	font-weight: 500px;
+}
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "montserrat",sans-serif;
+
+}
+.contact-section{
+  background: #313840;
+  padding: 80px 0;
+  text-align: center;
+  border-bottom: 150px;
+}
+
+.inner-width{
+  max-width: 600px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.contact-section h1{
+  font-size: 20px;
+  color: #888;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 400;
+}
+
+.name,.email,.message,.phone{
+  background: none;
+  border:none;
+  outline: none;
+  border-bottom: 1px solid;
+  color: #888;
+  padding: 10px 6px;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.name{
+  float: left;
+  width: 270px;
+}
+
+.email{
+  float: right;
+  width: 270px;
+}
+
+.message{
+  min-width: 100%;
+  max-width: 100%;
+
+}
+
+.phone{
+    float:left;
+    width: 270px;
+}
+
+
+.contact-section button{
+  background: none;
+  color: #70a1ff;
+  border: 1px solid #70a1ff;
+  padding: 12px 40px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: 0.4s linear;
+  cursor: pointer;
+}
+
+.contact-section button:hover{
+  background: #70a1ff;
+  color: #fff;
+}
+
+
+@media screen and (max-width:600px){
+  .name,.email,.phone{
+    width: 100%;
+    height: 200%
+  }
+}
+
+
+
